@@ -64,3 +64,10 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+
+#--
+# gem to refresh browser on file edit
+group :development do
+  gem "rack-livereload"
+end
