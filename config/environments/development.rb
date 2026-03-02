@@ -78,3 +78,10 @@ Rails.application.configure do
 
   config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
 end
+
+config.after_initialize do
+  Bullet.enable = true
+  Bullet.alert = true
+  Bullet.console = true
+  Bullet.rails_logger = true
+end
